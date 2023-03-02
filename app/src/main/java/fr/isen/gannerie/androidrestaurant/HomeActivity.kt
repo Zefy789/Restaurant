@@ -5,9 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
+import javax.net.ssl.SSLSessionBindingListener
+import fr.isen.gannerie.androidrestaurant.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
