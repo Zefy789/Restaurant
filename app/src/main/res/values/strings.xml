@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AndroidERestaurant</string>
+    <string name="Home_Title">Bienvenue!</string>
+    <string name="Restaurant">Space Burger</string>
+    <string name="bvn">Bienvenue chez</string>
+    <string name="btn_entrees">Entrées</string>
+    <string name="btn_plats">Plats</string>
+    <string name="btn_dessert">Déserts</string>
+    <string name="btn_entree">Entrées</string>
+    <string name="bakcground">background1</string>
+    <string name="burger">burger</string>
+    <string name="bvn2">Les Entrées</string>
+    <string name="bvn_plats">Les Plats</string>
+    <string name="bvn_desert">Les desserts</string>
 </resources>
