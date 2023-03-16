@@ -9,15 +9,26 @@
     <string name="btn_entree">Entrées</string>
     <string name="bakcground">background1</string>
     <string name="burger">burger</string>
-    <string name="starters">starters</string>
-    <string name="mealTitle" />
-    <string name="titleCategory" />
-    <string name="category_cell" />
+    <string name="titleCat">Title</string>
+    <string name="item">Item</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="icon">icon</string>
+    <string name="cart">Cart</string>
 
-    <string-array name="dishes">
+    <string-array name="tab_starters">
         <item>Salade</item>
         <item>Soupes</item>
         <item>Tapas</item>
+    </string-array>
+    <string-array name="tab_mains">
+        <item>Hamburger</item>
+        <item>Steack et Frites</item>
+        <item>Pizza</item>
+        <item>Pâtes Carbonara</item>
+        <item>Poisson</item>
+    </string-array>
+    <string-array name="tab_desserts">
         <item>Flan</item>
         <item>Brownie</item>
         <item>Café gourmand</item>
