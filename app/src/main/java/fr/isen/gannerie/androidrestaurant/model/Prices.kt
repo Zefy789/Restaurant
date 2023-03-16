@@ -1,4 +1,4 @@
-package fr.isen.bernet.androidrestaurant
+package fr.isen.gannerie.androidrestaurant
 
 import com.google.gson.annotations.SerializedName
 

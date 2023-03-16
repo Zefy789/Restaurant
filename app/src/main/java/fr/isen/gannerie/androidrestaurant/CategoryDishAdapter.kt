@@ -7,17 +7,17 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class CustomDishAdapter(private val images: ArrayList<String>) : RecyclerView.Adapter<CustomDishAdapter.ViewHolder>() {
+class CategoryDishAdapter(private val images: ArrayList<String>) : RecyclerView.Adapter<CategoryDishAdapter.ViewHolder>() {
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView2)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomDishAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryDishAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.image_view_dish, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: CustomDishAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CategoryDishAdapter.ViewHolder, position: Int) {
         val itemsViewModel = images[position]
         if (itemsViewModel.isNotEmpty()) {
             Picasso.get().load(itemsViewModel).into(holder.imageView)

@@ -6,12 +6,11 @@ import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.GsonBuilder
-import fr.isen.bernet.androidrestaurant.Items
 import fr.isen.gannerie.androidrestaurant.databinding.ActivityDetailsBinding
-import fr.isen.gannerie.androidrestaurant.Items
 import org.json.JSONObject
 import java.io.File
 
+@Suppress("DEPRECATION")
 class DetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailsBinding
@@ -56,7 +55,7 @@ class DetailsActivity : AppCompatActivity() {
         }
 
         val viewPager = binding.dishPhoto
-        val adapter = CustomDishAdapter(dish.images)
+        val adapter = CategoryDishAdapter(dish.images)
 
         viewPager.adapter = adapter
     }
