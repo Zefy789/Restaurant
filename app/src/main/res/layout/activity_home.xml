@@ -11,29 +11,16 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_width="730dp"
+        android:layout_height="1266dp"
         android:contentDescription="@string/bakcground"
         android:src="@drawable/rotation_contrast_stained_bright_blue_181766"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/background2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-150dp"
-        android:contentDescription="@string/bakcground"
-        android:src="@drawable/rotation_contrast_stained_bright_blue_181766"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.413" />
 
     <TextView
         android:id="@+id/bvn"
@@ -75,13 +62,13 @@
         app:layout_constraintTop_toBottomOf="@+id/space_burger"
         app:layout_constraintVertical_bias="0.066" />
 
-    <TextView
+    <Button
         android:id="@+id/btn_entree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/bowlby_one_sc"
-        android:onClick="on_button_entree_click"
         android:text="@string/btn_entree"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -90,14 +77,14 @@
         app:layout_constraintStart_toStartOf="@+id/burger"
         app:layout_constraintTop_toBottomOf="@+id/burger" />
 
-    <TextView
+    <Button
         android:id="@+id/btn_plats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="1dp"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/bowlby_one_sc"
-        android:onClick="on_button_plats_click"
         android:text="@string/btn_plats"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -107,13 +94,13 @@
         app:layout_constraintStart_toStartOf="@+id/btn_entree"
         app:layout_constraintTop_toBottomOf="@+id/btn_entree" />
 
-    <TextView
+    <Button
         android:id="@+id/btn_desert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
         android:fontFamily="@font/bowlby_one_sc"
-        android:onClick="on_button_desert_click"
         android:text="@string/btn_dessert"
         android:textColor="@color/white"
         android:textSize="34sp"

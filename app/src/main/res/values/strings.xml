@@ -9,7 +9,19 @@
     <string name="btn_entree">Entrées</string>
     <string name="bakcground">background1</string>
     <string name="burger">burger</string>
-    <string name="bvn2">Les Entrées</string>
-    <string name="bvn_plats">Les Plats</string>
-    <string name="bvn_desert">Les desserts</string>
+    <string name="starters">starters</string>
+    <string name="mealTitle" />
+    <string name="titleCategory" />
+    <string name="category_cell" />
+
+    <string-array name="dishes">
+        <item>Salade</item>
+        <item>Soupes</item>
+        <item>Tapas</item>
+        <item>Flan</item>
+        <item>Brownie</item>
+        <item>Café gourmand</item>
+        <item>Crêpe au Nutella</item>
+    </string-array>
+
 </resources>

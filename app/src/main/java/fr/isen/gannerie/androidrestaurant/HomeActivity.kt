@@ -1,40 +1,48 @@
 package fr.isen.gannerie.androidrestaurant
 
 import android.content.Intent
-import android.os.Bundle
-import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import javax.net.ssl.SSLSessionBindingListener
+import android.os.Bundle
+import android.util.Log
+import android.view.Window
+import android.widget.TextView
 import fr.isen.gannerie.androidrestaurant.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
+
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnEntree.setOnClickListener {
+            switchActivity(binding.btnEntree)
+        }
+
+        binding.btnPlats.setOnClickListener {
+            switchActivity(binding.btnPlats)
+        }
+
+        binding.btnDesert.setOnClickListener {
+            switchActivity(binding.btnDesert)
+        }
     }
 
-    public fun on_button_entree_click(v: View) {
-        val toast: Toast = Toast.makeText(this, "Commençons par le commencement !", Toast.LENGTH_LONG)
-        toast.show()
-        val intent = Intent(this, category_entree::class.java)
-        intent.putExtra("categorie", "Entrees")
-        startActivity(intent)
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("Destroy", "Activity $this has been destroyed")
     }
-    public fun on_button_plats_click(v: View) {
-        val toast: Toast = Toast.makeText(this, "Place aux plats !", Toast.LENGTH_LONG)
-        toast.show()
-        val intent = Intent(this, category_plats::class.java)
-        intent.putExtra("categorie", "Plats")
-        startActivity(intent)
-    }
-    public fun on_button_desert_click(v: View) {
-        val toast: Toast = Toast.makeText(this, "Le dessert !", Toast.LENGTH_LONG)
-        toast.show()
-        val intent = Intent(this, category_desert::class.java)
-        intent.putExtra("categorie", "Dessert")
+
+    private fun switchActivity(textView: TextView){
+        val intent = Intent(this@HomeActivity, ActivityCategory::class.java)
+        intent.putExtra("titleCategory", textView.text)
         startActivity(intent)
     }
 }
