@@ -15,6 +15,15 @@
     <string name="minus">-</string>
     <string name="icon">icon</string>
     <string name="cart">Cart</string>
+    <string name="Laylow" />
+    <string name="priceview">0</string>
+    <string name="imageView" />
+    <string name="mealTitle">meal</string>
+    <string name="ingredientsText">"Ingrédients : "</string>
+    <string name="totalprice">Total price : 0€</string>
+    <string name="dishNumber">0</string>
+    <string name="imageView3" />
+    <string name="imageView4" />
 
     <string-array name="tab_starters">
         <item>Salade</item>
@@ -31,8 +40,8 @@
     <string-array name="tab_desserts">
         <item>Flan</item>
         <item>Brownie</item>
-        <item>Café gourmand</item>
-        <item>Crêpe au Nutella</item>
+        <item>Cafe gourmand</item>
+        <item>Crepe au Nutella</item>
     </string-array>
 
 </resources>

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.GsonBuilder
 import fr.isen.gannerie.androidrestaurant.databinding.ActivityDetailsBinding
+import fr.isen.gannerie.androidrestaurant.model.Items
 import org.json.JSONObject
 import java.io.File
 

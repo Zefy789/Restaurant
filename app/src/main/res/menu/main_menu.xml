@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/action_cart"
+        android:icon="@drawable/dall_e_2023_03_02_13_11_26___burger_pixel_art__removebg_preview"
         android:title="@string/cart"
         app:actionLayout="@layout/custom_action_item_layout"
         app:showAsAction="always" />

@@ -1,7 +1,6 @@
-package fr.isen.gannerie.androidrestaurant
+package fr.isen.gannerie.androidrestaurant.model
 
 import com.google.gson.annotations.SerializedName
-
 
 data class FoodDataResult (
 

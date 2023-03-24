@@ -12,7 +12,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import fr.isen.gannerie.androidrestaurant.databinding.ActivityCategoryBinding
-import fr.isen.gannerie.androidrestaurant.FoodDataResult
+import fr.isen.gannerie.androidrestaurant.model.FoodDataResult
 import org.json.JSONObject
 
 class ActivityCategory : AppCompatActivity() {

@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import fr.isen.gannerie.androidrestaurant.Items
+import fr.isen.gannerie.androidrestaurant.model.Items
 import fr.isen.gannerie.androidrestaurant.R
 
 class CategoryAdapter(var mList: ArrayList<Items>, val onItemClickListener: (mealTitle: Items) -> Unit) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
