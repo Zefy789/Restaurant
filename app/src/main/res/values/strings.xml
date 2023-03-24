@@ -5,9 +5,8 @@
     <string name="bvn">Bienvenue chez</string>
     <string name="btn_entrees">Entrées</string>
     <string name="btn_plats">Plats</string>
-    <string name="btn_dessert">Déserts</string>
     <string name="btn_entree">Entrées</string>
-    <string name="bakcground">background1</string>
+    <string name="bakcground">background</string>
     <string name="burger">burger</string>
     <string name="titleCat">Title</string>
     <string name="item">Item</string>
@@ -24,6 +23,7 @@
     <string name="dishNumber">0</string>
     <string name="imageView3" />
     <string name="imageView4" />
+    <string name="btn_dessert">Desserts</string>
 
     <string-array name="tab_starters">
         <item>Salade</item>

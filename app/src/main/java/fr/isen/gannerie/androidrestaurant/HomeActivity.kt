@@ -30,8 +30,8 @@ class HomeActivity : AppCompatActivity() {
             switchActivity(binding.btnPlats)
         }
 
-        binding.btnDesert.setOnClickListener {
-            switchActivity(binding.btnDesert)
+        binding.btnDessert.setOnClickListener {
+            switchActivity(binding.btnDessert)
         }
     }
 
